@@ -1,0 +1,119 @@
+body{
+    background-color: #B9BAA3;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.navbar{
+    grid-area: navbar;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #0A100D;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    height: 70px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.navbar i{
+    font-size: 40px;
+}
+menu{
+    grid-area: menu;
+    font-family: 'Press Start 2P', cursive;
+    height: 100%;
+    background-color: #A22C29;
+    border-top: #0A100D solid 2px;
+    border-right: #0A100D solid 2px;
+    border-bottom: #0A100D solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0%;
+}
+.submenu{
+    font-size: small;
+    padding-bottom: 10px;
+}
+.categorias{
+    color: white;
+    padding: 30px;
+    justify-content: space-around;
+
+}
+main{
+    grid-area: main;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    border: #0A100D solid 2px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    'navbar navbar'
+    'menu main'
+    'footer footer';
+    gap: 10px;
+}
+.producto{
+    font-family: 'Homenaje', sans-serif;
+    border: #0A100D solid 2px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fotoproducto img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    padding: auto;
+}
+.infoproducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+button{
+    width: 150px;
+    height: 30px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #A22C29;
+    color: white;
+    border: #0A100D solid 1 px;
+    border-radius: 5px;
+}
+.footer{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    grid-area: footer;
+    background-color: #0A100D;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3em;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
